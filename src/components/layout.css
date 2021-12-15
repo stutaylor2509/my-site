@@ -10,20 +10,22 @@ body {
   
 }
 
-.splash{display: flex; justify-content: center; flex-direction: column; min-height: 100vh; padding: 0 3rem;}
-h1.hero{font-family: 'IBM Plex Sans'; font-size: clamp(4em,10vw,20em); color:#232f34; margin:0;}
+.splash{display: flex; justify-content: center; flex-direction: column; min-height: 100vh; width: 100vw; position: relative;}
+.splash video{width:100%; height: 100%;}
+.hero-box{position: absolute; top:0; left: 0; display: flex; justify-content: center; color:#000; align-items: center; width: 100%; height: 100%; background-color: #fff; mix-blend-mode: lighten;}
+h1.hero{font-family: 'Teko'; font-size: 45vw; margin:0; text-align: center;  /*background: url(https://c.tenor.com/WRMYRFtU5mYAAAAC/baseball-bat.gif);
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;*/
+}
 .splash p {
   font-size: 2em;
   margin-top: -0.51em;
   position: relative;
 }
-.splash p::before {
-  content: "";
-  background-color: #4C6771;
-  height: 5px;
-  width:15%;
-  position: absolute;
-  top:-4px;
-  left:0;
-  font-weight: bold;
+
+@media screen and (max-width:500px){
+  h1.hero{overflow-wrap: break-word; line-height: 0.9; font-size: vw;}
+  .splash{padding: 0 0.8rem;}
 }
