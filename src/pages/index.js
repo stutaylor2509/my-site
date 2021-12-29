@@ -13,7 +13,7 @@ const IndexPage = () => (
    
     <section>
      <div class="clip--container">
-    <video autoPlay muted loop>
+    <video autoPlay muted loop playsInline>
       <source src={HomeVideo} type="video/mp4" />
     </video>
     <svg width={0} height={0}>
