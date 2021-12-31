@@ -12,17 +12,10 @@ body {
   background: radial-gradient(circle, rgba(255,255,255,0) 51%, rgba(227,227,227,1) 100%);
   
 }
-.clip--container {
-  clip-path: url(#mask);
-  -webkit-clip-path: url(#mask);
-  -o-object-fit: cover;
-  object-fit: fill !important;
-  width: 296px;
-  height: 300px;
-  margin-left: 50px;
-}
-.clip--container video {
-  margin-left: -200px;
+
+h1 {
+font-size: clamp(4rem, 10vw, 12rem);
+margin-bottom: 0;
 }
 
 section {
@@ -30,9 +23,7 @@ section {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  filter: drop-shadow(0px 8px 10px rgba(0,0,0,0.25));
-  overflow-y:hidden;
-
+  padding: 5%;
 }
 
 @media screen and (max-width:768px){
