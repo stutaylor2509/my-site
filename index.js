@@ -11,7 +11,7 @@ const IndexPage = () => (
     <Seo title="Home" />
    
     <section className="hero">
-     <div className="clip--container">
+     <div>
   <h1>sdott81</h1>
   <h3>web development | custom wordpress themes | digital marketing</h3>
         </div> 
