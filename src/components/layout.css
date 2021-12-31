@@ -5,34 +5,38 @@ html {
 }
 body {
   margin: 0;
-  font-family: 'Lato';
+  font-family: 'Source Code Pro';
   max-width: 100vw;
-    overflow-x: hidden;
+  overflow-x: hidden;
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(255,255,255,0) 51%, rgba(227,227,227,1) 100%);
   
 }
 .clip--container {
   clip-path: url(#mask);
   -webkit-clip-path: url(#mask);
   -o-object-fit: cover;
-  object-fit: contain;
-  width: auto;
-  height: 350px;
+  object-fit: fill !important;
+  width: 296px;
+  height: 300px;
+  margin-left: 50px;
+}
+.clip--container video {
+  margin-left: -200px;
 }
 
-.clip--container video {
-  width: 250px;
-  margin: auto;
-}
 section {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   filter: drop-shadow(0px 8px 10px rgba(0,0,0,0.25));
+  overflow-y:hidden;
 
 }
 
-@media screen and (max-width:500px){
-  h1.hero{overflow-wrap: break-word; line-height: 0.9; }
-  .splash{padding: 0 0.8rem;}
-}
+@media screen and (max-width:768px){
+
+section{
+  flex-direction: column;
+}}
