@@ -35,8 +35,7 @@ const Layout = ({ children }) => {
             marginTop: `2rem`,
           }}
         >
-          &copy;2022 - sdott81
-        
+         
         </footer>
       </div>
     </>

@@ -3,7 +3,7 @@ module.exports = {
     title: `sdott81`,
     description: `My Gatsby based portfolio`,
     author: `Stu Taylor`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    siteUrl: `https://sdott8.one`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -28,7 +28,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/letter-s.png`, // This path is relative to the root of the site.
       },
     },
     
@@ -40,7 +40,7 @@ module.exports = {
     resolve: 'gatsby-plugin-google-fonts',
     options: {
       fonts: [
-        `Source Code Pro\:400`
+        `Source Code Pro\:400,200`
       ],
       display: "swap",
     },
