@@ -40,8 +40,7 @@ module.exports = {
     resolve: 'gatsby-plugin-google-fonts',
     options: {
       fonts: [
-        `Lato`,
-        `Teko\:700`
+        `Source Code Pro\:400`
       ],
       display: "swap",
     },
