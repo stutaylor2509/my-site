@@ -22,6 +22,29 @@ body {
 
   color: #f8f8ff;
 }
+.logos a:visited {
+  color: #f8f8ff;
+}
+footer {
+  padding: 2rem 5%;
+}
+section svg {
+  width: 40px;
+}
+.container {
+  width: min(90vw, 1400px);
+  margin: auto;
+}
+
+.two--col {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 2rem;
+}
+
+.margin--top {
+  margin-top: 3rem;
+}
 
 h1 {
   font-size: clamp(4rem, 10vw, 12rem);
@@ -45,18 +68,59 @@ h3 {
 .underline:hover {
   background-size: 100% 88%;
 }
+.button {
+  background: #fff;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  display: inline-flex;
+  text-decoration: none;
+  color: #232526;
+  font-weight: 400;
+  transition: all 0.3s;
+  box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px,
+    rgb(60 64 67 / 15%) 0px 1px 3px 1px;
+  border: 0;
+  font-family: "Source Code Pro";
+  font-size: 1.1rem;
+}
+.button:hover {
+  background: #232526; /* fallback for old browsers */
+  color: #f8f8ff;
+}
 
 .hero {
   display: flex;
-  justify-content: center;
   align-items: center;
   height: 100vh;
   padding: 0 5%;
   font-weight: 200;
 }
 
+.second {
+  height: 100vh;
+  background: #ffffff;
+  color: #000000;
+  position: relative;
+  z-index: 2;
+}
+
+/*FORM*/
+.form {
+  display: flex;
+  flex-direction: column;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.2rem !important;
+  margin-bottom: 0.5rem;
+  box-sizing: border-box;
+  font-family: "Source Code Pro";
+  border: 2px solid white;
+  background: none;
+}
+
 @media screen and (max-width: 768px) {
-  section {
-    flex-direction: column;
-  }
 }

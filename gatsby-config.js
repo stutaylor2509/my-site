@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `sdott81`,
+    title: `sdott81 - web developmentnpm up`,
     description: `My Gatsby based portfolio`,
     author: `Stu Taylor`,
     siteUrl: `https://sdott8.one`,
