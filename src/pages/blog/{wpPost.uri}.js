@@ -5,7 +5,7 @@ const PostTemplate = ({ data }) => {
 
     return (
         <article>
-
+        <img src={data.post.featuredImage.node.localFile.childImageSharp.fluid.src} width="500px" alt={data.post.featuredImage.node.altText}/>
           <h1 dangerouslySetInnerHTML={{ __html: data.post.title }} />
           <div dangerouslySetInnerHTML={{ __html: data.post.content }} />
 
@@ -25,6 +25,18 @@ export const pageQuery = graphql`
       author {
         node {
           name
+        }
+      }
+      featuredImage {
+        node {
+          altText
+          localFile {
+            childImageSharp {
+              fluid {
+                src
+              }
+            }
+          }
         }
       }
       date(formatString: "DD MM YYYY")

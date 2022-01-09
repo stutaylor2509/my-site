@@ -22,7 +22,7 @@ const BlogCard = () => {
   <article>
 
 <h4>{node.title}</h4>
-<img src={node.featuredImage.node.localFile.childImageSharp.fluid.src} alt={node.featuredImage.node.altText}/>
+<img src={node.featuredImage.node.localFile.childImageSharp.fluid.src} width="500px" alt="blog image"/>
 <p dangerouslySetInnerHTML={{ __html: node.excerpt}}/>
   <Link className="readmore" to={`/blog${node.uri}`}>
   <p>Read More...<span className="linkbox"></span></p>
