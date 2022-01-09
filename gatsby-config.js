@@ -6,6 +6,11 @@ module.exports = {
     siteUrl: `https://sdott8.one`,
   },
   plugins: [
+    {resolve: `gatsby-source-wordpress`,
+    options: {
+      url: `https://newcastlenighthawks.co.uk/sdott81/graphql`,
+    },
+  },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
