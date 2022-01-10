@@ -23,10 +23,10 @@ return (
     <Parallax speed={-3}>
      <div>
   <div className="head-container">
-  <h1 ref={boxRef} className="head">
+  <h1 className="head">
   <span className="underline">sdott81</span></h1>
   </div>
-  <div ref={contactBox} className="contactBox">
+  <div className="contactBox">
   <h3>Frontend web<br />Custom wordpress themes<br />Digital marketing consultancy</h3>
   <p className="logos"><Html5 /><Css3 /><Javascript /><ReactLogo /><Wordpress /><Gatsby /><a href="https://www.fiverr.com/sdott81" aria-label="Fiverr"><Fiverr /></a></p>
   <ContactButton />
