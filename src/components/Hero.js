@@ -1,5 +1,5 @@
 import React from 'react'
-import { gsap, Expo, autoAlpha} from 'gsap'
+//import { gsap, Expo, autoAlpha} from 'gsap'
 import {useRef, useEffect } from 'react'
 import Parallax from 'react-rellax'
 import { Html5, Css3, Javascript, ReactLogo, Wordpress } from "@styled-icons/boxicons-logos"
@@ -7,15 +7,16 @@ import { Fiverr } from "@styled-icons/simple-icons"
 import { Gatsby } from "@styled-icons/remix-fill"
 import ContactButton from "../components/ContactButton"
 import './Hero.css'
+
 const Hero = () => {
     
-        const boxRef = useRef(null);
-        const contactBox = useRef(null);
+      //  const boxRef = useRef(null);
+      //  const contactBox = useRef(null);
       
-        useEffect(() => {
-          gsap.from(boxRef.current, 1.4, { bottom:"-100%", opacity:"0", delay:0.5, ease: Expo.easeInOut, autoAlpha: 0 });
-          gsap.from(contactBox.current, 1.4, { opacity:"0", delay:2, ease: Expo.easeInOut, autoAlpha: 0 });
-        });
+      //  useEffect(() => {
+      //    gsap.from(boxRef.current, 1.4, { bottom:"-100%", opacity:"0", delay:0.5, ease: Expo.easeInOut, autoAlpha: 0 });
+      //    gsap.from(contactBox.current, 1.4, { opacity:"0", delay:2, ease: Expo.easeInOut, autoAlpha: 0 });
+      //  });
 
 return (
 <section className="hero">
